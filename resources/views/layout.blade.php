@@ -19,20 +19,42 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Inventario <span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown" id="inventario">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Inventario
+          </a>
+          <div class="dropdown-menu" aria-labelledby="inventario">
+            <a class="dropdown-item" href="/inventario">Agregar Inventario</a>
+            <a class="dropdown-item" href="/inventarios">Lista de Inventarios</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="productos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="productos">
+            <a class="dropdown-item" href="/producto">Agregar Producto</a>
+            <a class="dropdown-item" href="/productos">Lista de Productos</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Servicios <span class="sr-only">(current)</span></a>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="servicios">
+            <a class="dropdown-item" href="/servicio">Agregar Servicio</a>
+            <a class="dropdown-item" href="/servicios">Lista de Servicios</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Constantes de Calculo <span class="sr-only">(current)</span></a>
+
+        <li class="nav-item" id="constantes">
+          <a class="nav-link" href="/constantes">Constantes de Cálculo</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="#">Calculo de Precios <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Cálculo de Precios</a>
         </li>
       </ul>
     </div>

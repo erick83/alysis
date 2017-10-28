@@ -15,4 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('inventario', 'InventarioController@index');
+Route::get('servicios', 'ServiciosController@index');
+Route::get('constantes', 'ConstantesController@index');
 Route::get('calculadora_precios', 'PreciosController@index');
