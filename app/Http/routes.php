@@ -15,7 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('inventario', 'InventarioController@index');
+Route::get('inventario', 'InventarioController@add');
+Route::get('inventario_lista', 'InventarioController@getAll');
+
+Route::get('productos', 'ProductosController@getAll');
+Route::get('agregar_producto', 'ProductosController@add');
+
+
+Route::get('agregar_servicio', 'ServiciosController@add');
 Route::get('servicios', 'ServiciosController@index');
+Route::get('servicio/{id}', 'ServiciosController@getServicio');
+
+Route::get('material/{id}', 'MaterialesController@getMaterial');
+
 Route::get('constantes', 'ConstantesController@index');
 Route::get('calculadora_precios', 'PreciosController@index');

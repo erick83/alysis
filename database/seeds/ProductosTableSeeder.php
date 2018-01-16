@@ -12,7 +12,7 @@ class ProductosTableSeeder extends Seeder
     public function run()
     {
         DB::table('productos')->insert([
-            'producto' => 'Impresionse Laser',
+            'producto' => 'Impresiones Laser',
             'created_at' => new \DateTime(),
             'updated_at' => new \DateTime()
         ]);

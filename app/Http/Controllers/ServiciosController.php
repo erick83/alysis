@@ -13,4 +13,13 @@ class ServiciosController extends Controller
     $servicios = Servicio::all();
     return view('servicios', ['servicios' => $servicios]);
   }
+
+  public function getServicio($id) {
+    $servicio = Servicio::find($id);
+    return response()->json($servicio);
+  }
+
+  public function add() {
+  	return view('agregar_servicio');
+  }
 }

@@ -8,7 +8,7 @@ class Inventario extends Model
 {
     protected $table = 'inventario';
     
-    public function producto() {
+    public function material() {
         return $this->belongsTo('App\Materiales');        
     }
 }

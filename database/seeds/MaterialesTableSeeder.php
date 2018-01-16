@@ -24,14 +24,8 @@ class MaterialesTableSeeder extends Seeder
             'updated_at' => new \DateTime()
         ]);
         DB::table('materiales')->insert([
-            'id' => 3,
-            'material' => 'Papel glasé',
-            'created_at' => new \DateTime(),
-            'updated_at' => new \DateTime()
-        ]);
-        DB::table('materiales')->insert([
             'id' => 4,
-            'material' => 'Papel calcomanía',
+            'material' => 'Papel litho',
             'created_at' => new \DateTime(),
             'updated_at' => new \DateTime()
         ]);
@@ -98,6 +92,30 @@ class MaterialesTableSeeder extends Seeder
         DB::table('materiales')->insert([
             'id' => 15,
             'material' => 'Empaques',
+            'created_at' => new \DateTime(),
+            'updated_at' => new \DateTime()
+        ]);
+        DB::table('materiales')->insert([
+            'id' => 3,
+            'material' => 'Papel glasé 115gr',
+            'created_at' => new \DateTime(),
+            'updated_at' => new \DateTime()
+        ]);
+        DB::table('materiales')->insert([
+            'id' => 16,
+            'material' => 'Papel glasé 150gr',
+            'created_at' => new \DateTime(),
+            'updated_at' => new \DateTime()
+        ]);
+        DB::table('materiales')->insert([
+            'id' => 17,
+            'material' => 'Papel glasé 175gr',
+            'created_at' => new \DateTime(),
+            'updated_at' => new \DateTime()
+        ]);
+        DB::table('materiales')->insert([
+            'id' => 18,
+            'material' => 'Papel glasé 300gr',
             'created_at' => new \DateTime(),
             'updated_at' => new \DateTime()
         ]);

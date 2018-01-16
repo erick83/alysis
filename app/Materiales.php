@@ -7,4 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Materiales extends Model
 {
     protected $table = 'materiales';
+
+    public function inventario() {
+        return $this->hasMany('App\Inventario', 'material_id');
+    }
 }
